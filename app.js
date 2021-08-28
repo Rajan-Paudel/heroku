@@ -13,8 +13,8 @@ app.post('/send-noti',(req,res,)=>{
     console.log(req.body)
    const message = {
     notification:{
-        title: "new notification",
-        body: "title here"
+        title: req.body.senderEmail,
+        body: req.body.title
     },
     tokens:req.body.tokens
 }
