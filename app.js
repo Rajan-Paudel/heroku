@@ -14,7 +14,7 @@ app.post('/send-noti',(req,res,)=>{
    const message = {
     notification:{
         title: req.body.senderEmail,
-        body: req.body.batch
+        body: req.body.title
 
     },
     tokens:req.body.tokens
