@@ -26,6 +26,10 @@ admin.messaging().sendMulticast(message).then(res=>{
 }) 
 })
 
-app.listen(3000,()=>{
+app.get('/',(req,res) => {
+    res.send("hello");
+})
+
+app.listen('https://uicserver.herokuapp.com/',()=>{
     console.log('server running')
 })
