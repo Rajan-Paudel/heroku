@@ -14,7 +14,8 @@ app.post('/send-noti',(req,res,)=>{
    const message = {
     notification:{
         title: req.body.senderEmail,
-        body: req.body.title
+        body: req.body.title,
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/uicapp-78084.appspot.com/o/ic_launcher.png?alt=media',
 
     },
     tokens:req.body.tokens
