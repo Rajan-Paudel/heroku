@@ -8,7 +8,7 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
 
-
+const port= process.env.PORT || 3000;
 app.post('/send-noti',(req,res,)=>{
     console.log(req.body)
    const message = {
@@ -30,6 +30,6 @@ app.get('/',(req,res) => {
     res.send("hello");
 })
 
-app.listen('https://uicserver.herokuapp.com/',()=>{
+app.listen(port,()=>{
     console.log('server running')
 })
